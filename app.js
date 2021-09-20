@@ -39,7 +39,7 @@ app.get("/", function (req, res) {
       console.log(err);
     } else {
       if (posts.length == 0) {
-        //Adding a default blog if there are not blogs
+        //Adding a default blog if there are no blogs
         const homePost = new Post({
           title: "Home",
           content:
